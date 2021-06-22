@@ -13,8 +13,11 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        minSdkVersion 20
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    dataBinding {
+        enabled = true
     }
 
     buildTypes {
