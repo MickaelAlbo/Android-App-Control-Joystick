@@ -1,0 +1,2 @@
+rootProject.name = "Android-App-Remote-Control-Joystick"
+include ':app'
