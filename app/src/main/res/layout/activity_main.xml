@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".View.MainActivity">
 
 
     <EditText
@@ -59,10 +59,22 @@
         android:layout_height="35dp"
         android:layout_marginBottom="88dp"
         android:valueFrom="0.0"
-        android:valueTo="1.0"
+        android:valueTo="100.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.android_app_remote_control_joystick.View.Joystick
+        android:id="@+id/joystick_iframe"
+        android:layout_width="199dp"
+        android:layout_height="212dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rudder_seek_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.591" />
 
     <SeekBar
         android:id="@+id/rudder_seek_bar"
@@ -72,8 +84,8 @@
         android:layout_marginTop="220dp"
         android:layout_marginEnd="216dp"
         android:rotation="270"
-        android:valueFrom="0.0"
-        android:valueTo="1.0"
+        android:valueFrom="-100.0"
+        android:valueTo="100.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
@@ -92,10 +104,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="5dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/disconnect_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Disconnect!"
