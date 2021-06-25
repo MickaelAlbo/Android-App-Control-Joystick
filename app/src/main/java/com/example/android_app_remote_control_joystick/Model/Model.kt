@@ -11,8 +11,6 @@ class Model {
     private var isConnected: Boolean = false
     private lateinit var socket: Socket
     private lateinit var output: OutputStream
-    private lateinit var rudder: SeekBar
-    private lateinit var throttle: SeekBar
 
     fun connectToFg(ip: String, port:Int){
         val connectThread = Thread(Runnable {
@@ -24,8 +22,18 @@ class Model {
         connectThread.join()
     }
 
-    fun sendDataToFg(data: String) {
-        val data_thread = Thread(Runnable {
+    fun disconnectFromFg() {
+        this.output.close()
+        this.socket.close()
+        this.isConnected = false
+    }
+
+    fun exitApp() {
+        exitProcess(-1)
+    }
+
+    private fun sendDataToFg(data: String) {
+        val dataThread = Thread(Runnable {
             try {
                 output.write(data.toByteArray(Charsets.UTF_8))
                 output.flush()
@@ -33,19 +41,8 @@ class Model {
                 e.printStackTrace()
             }
         })
-        data_thread.start()
-        data_thread.join()
-    }
-
-
-    fun disconnectFromFg() {
-        this.output.close()
-        this.socket.close()
-        this.isConnected = false
-    }
-
-    fun exit() {
-        exitProcess(-1)
+        dataThread.start()
+        dataThread.join()
     }
 
     fun setElevatorVal(new_val: Float){
@@ -72,5 +69,4 @@ class Model {
             this.sendDataToFg(data);
         }
     }
-
 }

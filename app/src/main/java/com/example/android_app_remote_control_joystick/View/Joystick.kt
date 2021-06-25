@@ -42,7 +42,7 @@ class Joystick @JvmOverloads constructor(
 
     }
     override fun onDraw(canvas: Canvas) {
-        canvas.drawCircle(width / 2.0f, height / 2.0f, 300F, outerCircle)
+        canvas.drawCircle(width / 2.0f, height / 2.0f, 320F, outerCircle)
         canvas.drawCircle(width / 2.0f, height / 2.0f, 180F, shadowCircle)
         canvas.drawCircle(innerCircleCenter.x, innerCircleCenter.y, 90F, innerCircle)
 

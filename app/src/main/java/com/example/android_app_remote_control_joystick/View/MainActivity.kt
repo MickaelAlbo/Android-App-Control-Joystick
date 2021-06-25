@@ -1,7 +1,6 @@
 package com.example.android_app_remote_control_joystick.View
 
 import android.os.Bundle
-import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_app_remote_control_joystick.R
@@ -12,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     private var viewModel: ViewModel = ViewModel()
     private lateinit var connectButton: Button
     private lateinit var disconnectButton: Button
+    private lateinit var exitButton: Button
     private lateinit var rudderBar: SeekBar
     private lateinit var throttleBar: SeekBar
     private lateinit var joystick: Joystick
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         connectButton = findViewById(R.id.connect_button)
         disconnectButton = findViewById(R.id.disconnect_button)
-//    val exitButton: Button = findViewById(R.id.Exit)
+        exitButton = findViewById(R.id.exit_button)
         rudderBar = findViewById(R.id.rudder_seek_bar)
         throttleBar = findViewById(R.id.throttle_seek_bar)
         joystick = findViewById(R.id.joystick_iframe)
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         }
         connectButton.setOnClickListener { connectToFlightGear() }
         disconnectButton.setOnClickListener { disconnect() }
-//    exitButton.setOnClickListener { exit() }
+        exitButton.setOnClickListener { exitApp() }
     }
 
     private fun listenToRudderSeekBar() {
@@ -78,7 +78,6 @@ private fun connectToFlightGear() {
 private fun disconnect() {
     try {
         viewModel.disconnectFromFg()
-        connectButton.text = "Connect!"
         connectButton.isEnabled = true
         val toast =
             Toast.makeText(applicationContext, "DisConnection succeeded!", Toast.LENGTH_SHORT)
@@ -91,7 +90,7 @@ private fun disconnect() {
     }
 }
 
-private fun exit() {
-    viewModel.exit()
+private fun exitApp() {
+    viewModel.exitApp()
 }
 }

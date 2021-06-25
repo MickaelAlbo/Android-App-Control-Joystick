@@ -1,6 +1,5 @@
 package com.example.android_app_remote_control_joystick.ViewModel
 
-import android.widget.SeekBar
 import com.example.android_app_remote_control_joystick.Model.Model
 
 class ViewModel {
@@ -17,8 +16,8 @@ class ViewModel {
     fun setRudder(newVal:Float){
         this.model.setRudderVal(newVal)
     }
-    fun exit() {
-        model.exit()
+    fun exitApp() {
+        model.exitApp()
     }
     fun connectToFg(port: Int, ip: String){
         this.model.connectToFg(ip,port);
