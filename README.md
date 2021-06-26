@@ -9,7 +9,7 @@
 
 <a name="back"></a>
 ## Background
-The app was designed with the design pattern [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel).  
+The app was designed with the architectural pattern [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel).  
 The app is divide to 3 main parts – Model, View, View-Model:  
 * The **View** is composed from two parts:
     1. The `XML` file, which is the front view. Doesn’t contain any business logic, and only present.
