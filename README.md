@@ -45,7 +45,7 @@ Notice that the model doesn’t return any result or answer to the View-Model, a
 1. Open the FlightGear
 2. Click on ***Fly!***
 3. Open the Android Studio/Intellij
-4. Tap on the terminal `git clone https://github.com/MickaelAlbo/Android-App-Control-Joystick`  
+4. Tap on the terminal `git clone https://github.com/MickaelAlbo/Android-App-Control-Joystick.git`  
 5. Run the app
 6. Insert ***6400*** in the ***port field***
 7. Insert your **IP** adress in the ***IP field*** and click on ***Connect!***
