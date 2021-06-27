@@ -9,7 +9,7 @@
 
 <a name="back"></a>
 ## Background
-The app was designed with the design pattern [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel).  
+The app was designed with the architectural pattern [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel).  
 The app is divide to 3 main parts – Model, View, View-Model:  
 * The **View** is composed from two parts:
     1. The `XML` file, which is the front view. Doesn’t contain any business logic, and only present.
@@ -44,20 +44,23 @@ Notice that the model doesn’t return any result or answer to the View-Model, a
 ## Run the app
 1. Open the FlightGear
 2. Click on ***Fly!***
-3. Open the Android Studio/Intellij
-4. Tap on the terminal `git clone https://github.com/MickaelAlbo/Android-App-Control-Joystick`  
-5. Run the app
+3. Run the command on the terminal `git clone https://github.com/MickaelAlbo/Android-App-Control-Joystick.git`  
+4. Open the Android Studio/Intellij and import the project from the cloning destination path 
+5. Run the app  
 6. Insert ***6400*** in the ***port field***
 7. Insert your **IP** adress in the ***IP field*** and click on ***Connect!***
 8. When you want to disconnect, click on ***Disconnect!*** (You can also exit by clicking ***Exit app!***)  
 
 **The app:**  
 
-![image](https://user-images.githubusercontent.com/71727260/123403757-83acce00-d5b1-11eb-9728-91771bb54ea6.png)
+![image](https://user-images.githubusercontent.com/71727260/123522238-c1e6e200-d6c4-11eb-94cc-4061b4dba524.png)
 
 <a name="UML"></a>
 ## UML  
 To see the UML of the project click [here](https://github.com/MickaelAlbo/Android-App-Control-Joystick/blob/master/UML.pdf).
 
-## Video
 <a name="Video"></a>
+## Video  
+To see the video of the presentation and demo of the flight click [here](https://www.youtube.com/watch?v=vcZt2kb9uO8).
+
+
