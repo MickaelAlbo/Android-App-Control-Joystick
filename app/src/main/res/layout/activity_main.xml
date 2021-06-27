@@ -54,11 +54,11 @@
         app:barrierDirection="left" />
 
     <SeekBar
-        android:id="@+id/throttle_seek_bar"
+        android:id="@+id/rudder_seek_bar"
         android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginBottom="64dp"
-        android:valueFrom="0.0"
+        android:valueFrom="-100.0"
         android:valueTo="100.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,20 +71,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/rudder_seek_bar"
+        app:layout_constraintStart_toEndOf="@+id/throttle_seek_bar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.591" />
 
     <SeekBar
-        android:id="@+id/rudder_seek_bar"
+        android:id="@+id/throttle_seek_bar"
         android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginLeft="-300dp"
         android:layout_marginTop="220dp"
         android:layout_marginEnd="216dp"
         android:rotation="270"
-        android:valueFrom="-100.0"
+        android:valueFrom="0.0"
         android:valueTo="100.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -131,10 +131,10 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <TextView
-        android:id="@+id/throttle_text"
+        android:id="@+id/rudder_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Throttle"
+        android:text="Rudder"
         android:textColor="@color/green_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -143,11 +143,11 @@
         app:layout_constraintVertical_bias="0.844" />
 
     <TextView
-        android:id="@+id/rudder_text"
+        android:id="@+id/throttle_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rotation="90"
-        android:text="Rudder"
+        android:text="Throttle"
         android:textColor="@color/green_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
