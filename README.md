@@ -53,7 +53,7 @@ Notice that the model doesn’t return any result or answer to the View-Model, a
 
 **The app:**  
 
-![image](https://user-images.githubusercontent.com/71727260/123522238-c1e6e200-d6c4-11eb-94cc-4061b4dba524.png)
+![image](https://user-images.githubusercontent.com/71727260/123548805-fa42fa80-d76e-11eb-95f5-df574319ddca.png)
 
 <a name="UML"></a>
 ## UML  
