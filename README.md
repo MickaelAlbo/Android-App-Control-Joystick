@@ -59,5 +59,8 @@ Notice that the model doesn’t return any result or answer to the View-Model, a
 ## UML  
 To see the UML of the project click [here](https://github.com/MickaelAlbo/Android-App-Control-Joystick/blob/master/UML.pdf).
 
-## Video
 <a name="Video"></a>
+## Video  
+To see the video of the presentation and demo of the flight click [here](https://www.youtube.com/watch?v=vcZt2kb9uO8).
+
+
