@@ -79,6 +79,7 @@ private fun disconnect() {
     try {
         viewModel.disconnectFromFg()
         connectButton.isEnabled = true
+        connectButton.text = "CONNECT!"
         val toast =
             Toast.makeText(applicationContext, "DisConnection succeeded!", Toast.LENGTH_SHORT)
                 .show()

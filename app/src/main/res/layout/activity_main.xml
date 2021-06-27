@@ -55,9 +55,9 @@
 
     <SeekBar
         android:id="@+id/throttle_seek_bar"
-        android:layout_width="335dp"
+        android:layout_width="300dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="64dp"
         android:valueFrom="0.0"
         android:valueTo="100.0"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -78,7 +78,7 @@
 
     <SeekBar
         android:id="@+id/rudder_seek_bar"
-        android:layout_width="335dp"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginLeft="-300dp"
         android:layout_marginTop="220dp"
@@ -140,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.775" />
+        app:layout_constraintVertical_bias="0.844" />
 
     <TextView
         android:id="@+id/rudder_text"
@@ -151,7 +151,7 @@
         android:textColor="@color/green_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.536" />
