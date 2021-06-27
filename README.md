@@ -61,6 +61,6 @@ To see the UML of the project click [here](https://github.com/MickaelAlbo/Androi
 
 <a name="Video"></a>
 ## Video  
-To see the video of the presentation and demo of the flight click [here](https://www.youtube.com/watch?v=vcZt2kb9uO8).
+To see the video of the presentation and demo of the flight click [here](https://youtu.be/7PhcFRZKtAY).
 
 
